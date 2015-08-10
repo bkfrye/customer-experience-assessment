@@ -1,0 +1,26 @@
+{
+  "name": "customer-experience-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkfrye/customer-experience-assessment.git"
+  },
+  "author": "brandon frye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkfrye/customer-experience-assessment/issues"
+  },
+  "homepage": "https://github.com/bkfrye/customer-experience-assessment#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-sass": "^2.0.4"
+  }
+}

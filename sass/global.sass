@@ -1,8 +1,113 @@
 @import 'foundation/components/grid.scss'
+@import 'foundation/components/block-grid.scss'
+@import 'settings.sass'
 
+$blue: #4981be
 
+    
+section
+    width: 100%
+    padding: 60px 32px
+    background-position: center center
+    background-size: cover
+    background-repeat: no-repeat
+li, p   
+    font-family: 'Lato', sans-serif;
+    font-weight: 300
+    
+#intro, #slide-7
+    background-image: url(../img/moon-bg.png)
+    
+    
+    h1,h2,p, li
+        color: #fff
+    
+    h1
+        font-size: 56px
+        margin-bottom: 3em
+        
+        @include tablet
+            margin-bottom: 2em
+            
+        @include phone
+            margin-bottom: 1em
+        
+    h2
+        font-size: 24px
+        margin-bottom: 1em
+        
+    fieldset
+        input
+            background: transparent
+            margin-bottom: 18px
+            
+    ul
+        @include phone
+            padding-left: 0
+        li
+            margin: 18px
+            font-size: 18px
+        
+#slide-2
+    background: url(../img/slide-2.png)
+    background-repeat: no-repeat
+    background-attachment: fixed
 
+    
+    
+    p
+        color: white
+        font-size: 48px
+        background: rgba(73,129,190,.8)
+        padding: 18px 64px
+    
+#slide-3
+    
+    article
+        margin-top: 48px
+    
+    ul
+        list-style-type: none !important
 
-div, img
-    margin: 0 
-    padding: 0
+        li
+            position: inherit
+        
+#slide-4
+    position: relative
+    background-image: url(../img/slide-4.png)
+    text-align: center
+    color: #fff
+    
+    h2
+        color: #fff
+        font-size: 48px
+    
+    article
+        padding: 36px 36px
+        margin-top: 36px
+        font-size: 28px
+        background: rgba(146,63,143,.6)
+        
+#slide-5
+    
+    .img
+        margin-top: -100px
+        
+#slide-6
+    border-top: 1px solid lightgrey
+
+    img
+        display: block
+        margin: 0 auto
+        max-width: 600px
+        margin-bottom: 36px
+        
+    p
+        font-size: 28px
+        text-decoration: underline
+        
+    ul
+        li
+            margin: 12px
+            font-size: 18px
+            

@@ -11,6 +11,13 @@ section
     background-position: center center
     background-size: cover
     background-repeat: no-repeat
+    
+    @include tablet
+        padding: 30px 24px
+        
+    @include phone
+        padding: 14px
+    
 li, p   
     font-family: 'Lato', sans-serif;
     font-weight: 300
@@ -24,13 +31,16 @@ li, p
     
     h1
         font-size: 56px
-        margin-bottom: 3em
+        margin-top: 1.5em
+        margin-bottom: 1em
         
         @include tablet
             margin-bottom: 2em
+            font-size: 36px
             
         @include phone
             margin-bottom: 1em
+            font-size: 36px
         
     h2
         font-size: 24px
@@ -53,15 +63,30 @@ li, p
     background-repeat: no-repeat
     background-attachment: fixed
 
-    
+    @include phone
+        padding: 0
+        background: 0
     
     p
         color: white
         font-size: 48px
         background: rgba(73,129,190,.8)
         padding: 18px 64px
+        
+        @include tablet
+            font-size: 36px
+            padding: 18px 32px
+            
+        @include phone
+            font-size: 24px
+            padding: 18px 16px
+            height: 100%
     
 #slide-3
+    
+    #arrow
+        @include phone
+            display: none
     
     article
         margin-top: 48px
@@ -78,9 +103,18 @@ li, p
     text-align: center
     color: #fff
     
+    @include phone
+        background-position: left 
+    
     h2
         color: #fff
         font-size: 48px
+        
+        @include tablet
+            font-size: 36px
+            
+        @include phone
+            font-size: 28px
     
     article
         padding: 36px 36px
@@ -88,10 +122,20 @@ li, p
         font-size: 28px
         background: rgba(146,63,143,.6)
         
+        @include phone
+            padding: 9px
+            font-size: 18px
+        
 #slide-5
     
     .img
         margin-top: -100px
+        
+        @include tablet
+            margin-top: -50px
+            
+        @include phone
+            margin-top: 0
         
 #slide-6
     border-top: 1px solid lightgrey
@@ -99,15 +143,34 @@ li, p
     img
         display: block
         margin: 0 auto
-        max-width: 600px
-        margin-bottom: 36px
+        width: 80%
+        
+    @include phone
+        height: auto
+
         
     p
         font-size: 28px
         text-decoration: underline
         
+        @include phone
+            font-size: 22px
+        
     ul
+        @include phone
+            padding-left: 0
         li
             margin: 12px
             font-size: 18px
             
+    #block-grid
+        margin: 0
+        padding: 0
+        list-style-type: none !important
+        
+        li
+            
+            margin: 0
+            padding: 0
+            position: inherit
+        
